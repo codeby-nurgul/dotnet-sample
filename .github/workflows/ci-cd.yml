@@ -27,4 +27,3 @@ jobs:
           context: .
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/dotnet-sample:latest
-s
