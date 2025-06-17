@@ -1,0 +1,15 @@
+C:\Users\Nurgül\dotnet-sample\dotnet-sample\bin\Debug\net9.0\dotnet-sample.exe
+C:\Users\Nurgül\dotnet-sample\dotnet-sample\bin\Debug\net9.0\dotnet-sample.deps.json
+C:\Users\Nurgül\dotnet-sample\dotnet-sample\bin\Debug\net9.0\dotnet-sample.runtimeconfig.json
+C:\Users\Nurgül\dotnet-sample\dotnet-sample\bin\Debug\net9.0\dotnet-sample.dll
+C:\Users\Nurgül\dotnet-sample\dotnet-sample\bin\Debug\net9.0\dotnet-sample.pdb
+C:\Users\Nurgül\dotnet-sample\dotnet-sample\obj\Debug\net9.0\dotnet-sample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nurgül\dotnet-sample\dotnet-sample\obj\Debug\net9.0\dotnet-sample.AssemblyInfoInputs.cache
+C:\Users\Nurgül\dotnet-sample\dotnet-sample\obj\Debug\net9.0\dotnet-sample.AssemblyInfo.cs
+C:\Users\Nurgül\dotnet-sample\dotnet-sample\obj\Debug\net9.0\dotnet-sample.csproj.CoreCompileInputs.cache
+C:\Users\Nurgül\dotnet-sample\dotnet-sample\obj\Debug\net9.0\dotnet-sample.sourcelink.json
+C:\Users\Nurgül\dotnet-sample\dotnet-sample\obj\Debug\net9.0\dotnet-sample.dll
+C:\Users\Nurgül\dotnet-sample\dotnet-sample\obj\Debug\net9.0\refint\dotnet-sample.dll
+C:\Users\Nurgül\dotnet-sample\dotnet-sample\obj\Debug\net9.0\dotnet-sample.pdb
+C:\Users\Nurgül\dotnet-sample\dotnet-sample\obj\Debug\net9.0\dotnet-sample.genruntimeconfig.cache
+C:\Users\Nurgül\dotnet-sample\dotnet-sample\obj\Debug\net9.0\ref\dotnet-sample.dll
