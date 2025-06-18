@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  dotnet-sample-main:
+    image: codebynurgul/dotnet-sample:main
+    container_name: dotnet-sample-main
+    ports:
+      - "5002:80"
+    environment:
+      - ASPNETCORE_URLS=http://+:80
+    networks:
+      - main-net
+
+networks:
+  main-net:
+    driver: bridge
