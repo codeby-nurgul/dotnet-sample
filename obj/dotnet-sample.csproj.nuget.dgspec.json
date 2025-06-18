@@ -1,30 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nurgül\\dotnet-sample\\dotnet-sample\\dotnet-sample.csproj": {}
+    "C:\\Users\\Nurgül\\dotnet-sample\\dotnet-sample.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nurgül\\dotnet-sample\\dotnet-sample\\dotnet-sample.csproj": {
+    "C:\\Users\\Nurgül\\dotnet-sample\\dotnet-sample.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nurgül\\dotnet-sample\\dotnet-sample\\dotnet-sample.csproj",
+        "projectUniqueName": "C:\\Users\\Nurgül\\dotnet-sample\\dotnet-sample.csproj",
         "projectName": "dotnet-sample",
-        "projectPath": "C:\\Users\\Nurgül\\dotnet-sample\\dotnet-sample\\dotnet-sample.csproj",
+        "projectPath": "C:\\Users\\Nurgül\\dotnet-sample\\dotnet-sample.csproj",
         "packagesPath": "C:\\Users\\Nurgül\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nurgül\\dotnet-sample\\dotnet-sample\\obj\\",
+        "outputPath": "C:\\Users\\Nurgül\\dotnet-sample\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Nurgül\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net9.0"
+          "net8.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net9.0": {
-            "targetAlias": "net9.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -41,8 +41,8 @@
         "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
-        "net9.0": {
-          "targetAlias": "net9.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "imports": [
             "net461",
             "net462",
@@ -55,6 +55,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
