@@ -9,7 +9,7 @@ namespace dotnet_sample.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            return Ok("Hello from test branch!");
+            return Ok("Hello World!");
         }
     }
 }
