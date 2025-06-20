@@ -38,3 +38,12 @@ jobs:
             -Dsonar.projectName=dotnet-sample
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+
+      - name: Trivy file system scan
+        uses: aquasecurity/trivy-action@master
+        with:
+          scan-type: fs
+          scan-ref: .
+          format: table
+          exit-code: 0
+          ignore-unfixed: true
