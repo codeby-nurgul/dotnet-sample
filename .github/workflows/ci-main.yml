@@ -5,7 +5,8 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build-and-push:
+  build-and-analyze:
+    name: Build and SonarCloud Analyze
     runs-on: ubuntu-latest
 
     steps:
@@ -13,36 +14,27 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # 2. Docker Buildx kurulumu
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
-
-      # 3. DockerHub giriş yap
-      - name: Log in to DockerHub
-        uses: docker/login-action@v3
+      # 2. .NET ortamını kur
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v4
         with:
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_TOKEN }}
+          dotnet-version: '8.0.x'  # Projene göre 6.0 veya 7.0 da olabilir
 
-      # 4. SonarQube analizini çalıştır
-      - name: SonarQube Scan
-        uses: SonarSource/sonarqube-scan-action@v2
+      # 3. Bağımlılıkları yükle
+      - name: Restore dependencies
+        run: dotnet restore
+
+      # 4. Projeyi derle
+      - name: Build
+        run: dotnet build --no-restore
+
+      # 5. SonarCloud analizi yap
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@v2
         with:
-          projectBaseDir: .
+          args: >
+            -Dsonar.organization=codeby-nurgul
+            -Dsonar.projectKey=dotnet-sample
+            -Dsonar.projectName=dotnet-sample
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-
-      # 5. Docker imajını build et ve pushla
-      - name: Build and push main image
-        uses: docker/build-push-action@v5
-        with:
-          context: .
-          push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/dotnet-sample:main
-
-      # 6. Trivy ile güvenlik taraması yap
-      - name: Run Trivy vulnerability scanner
-        uses: aquasecurity/trivy-action@master
-        with:
-          image-ref: ${{ secrets.DOCKER_USERNAME }}/dotnet-sample:main
