@@ -34,7 +34,7 @@ jobs:
         with:
           args: >
             -Dsonar.organization=codeby-nurgul
-            -Dsonar.projectKey=dotnet-sample
+            -Dsonar.projectKey=codeby-nurgul_dotnet-sample
             -Dsonar.projectName=dotnet-sample
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
